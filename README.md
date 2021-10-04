@@ -17,6 +17,8 @@ docker-compose up -d
 ## Dev enviroment 📦
 
 ```
+docker exec -it angular-container npm i
+docker exec -it nest-container npm i
 docker exec -it angular-container ng serve --host=0.0.0.0 --disable-host-check
 docker exec -it nest-container npm run start:dev
 ```
